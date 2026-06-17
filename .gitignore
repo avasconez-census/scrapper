@@ -1,0 +1,18 @@
+# Entorno de Python (solo para pruebas en Mac/Linux, no va al repo)
+.venv/
+__pycache__/
+*.pyc
+
+# Artefactos de PyInstaller
+build/
+dist/
+*.spec
+
+# Resultados y carpetas de salida del programa
+fotos-campeonato/
+no_encontradas.txt
+reporte.txt
+_PRUEBA/
+
+# El Excel real con datos sensibles: NO subirlo al repo
+matriculas.xlsx

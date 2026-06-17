@@ -1,0 +1,31 @@
+name: Compilar EXE (Windows)
+
+# Se puede lanzar a mano desde la pestaña "Actions" o en cada push.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Descargar el codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar PyInstaller
+        run: pip install pyinstaller
+
+      - name: Compilar copiar_fotos.exe (un solo archivo)
+        run: pyinstaller --onefile --console --name copiar_fotos copiar_fotos.py
+
+      - name: Subir el .exe como artefacto descargable
+        uses: actions/upload-artifact@v4
+        with:
+          name: copiar_fotos-exe
+          path: dist/copiar_fotos.exe
