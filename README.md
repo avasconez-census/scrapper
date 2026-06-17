@@ -32,7 +32,7 @@ internet. Solo:
 La ventana espera un **Enter** al final para que se pueda leer el resumen.
 
 > La carpeta de origen está fijada dentro del programa:
-> `C:\Users\ROXANA\Desktop\CREDENCIALES`.
+> `C:\Users\ROXANA\Desktop\CREDENCIALES\FOTOS TOTAL CREDENCIAL`.
 > Si cambia, hay que editar la variable `ORIGEN` en `copiar_fotos.py` y
 > recompilar.
 

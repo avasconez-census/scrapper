@@ -24,7 +24,7 @@ from collections import defaultdict
 # =====================================================================
 
 # Carpeta donde estan TODAS las fotos (origen). Se lee, nunca se modifica.
-ORIGEN = r"C:\Users\ROXANA\Desktop\CREDENCIALES"
+ORIGEN = r"C:\Users\ROXANA\Desktop\CREDENCIALES\FOTOS TOTAL CREDENCIAL"
 
 # Excel con las matriculas (columna A, sin cabecera). Por defecto, junto a este script.
 EXCEL = "matriculas.xlsx"
