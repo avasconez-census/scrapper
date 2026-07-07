@@ -18,11 +18,11 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Instalar PyInstaller
-        run: pip install pyinstaller
+      - name: Instalar dependencias
+        run: pip install pyinstaller pdfplumber
 
       - name: Compilar copiar_fotos.exe (un solo archivo)
-        run: pyinstaller --onefile --console --name copiar_fotos copiar_fotos.py
+        run: pyinstaller --onefile --windowed --name copiar_fotos copiar_fotos.py
 
       - name: Subir el .exe como artefacto descargable
         uses: actions/upload-artifact@v4
